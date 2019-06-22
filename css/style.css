@@ -3,8 +3,22 @@
    font-size: 100%;
 }
 
+
 .col-md-3>ul>li{
    background: #efefef;
+}
+
+.card-layout{
+   display: block;
+width: 100%;
+}
+
+.trapezoid {
+	border-bottom: 50px solid red;
+	border-left: 25px solid red;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 400px;
 }
 
 td, th {

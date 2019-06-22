@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>card</title>
+    <title>sdf</title>
 </head>
 
 <body class="bg-light">
-    <div class="container-fluid ">
+    <div class="container-fullwidth ">
 
         <section class="sticky-top">
             <div class="container-fluid ">
@@ -88,19 +88,17 @@
 
         <!--title-->
         <section>
-            <div class="container-fluid bg-secondary">
+            <div class="container-fullwidth bg-secondary">
                 <div class="d-flex flex-column flex-sm-column flex-md-row justify-content-center">
-                    <div class="flex-grow-1">
+                    <div class="p-2 flex-grow-1 text-center mt-3">
+                        <img src="image/icon/icons8-phone-26.png">
+                        <span style="font-size: 19px">Liên hệ ngay: 090123456</span>
+                    </div>
+                    <div class="p-2 flex-grow-1 text-center">
                         <h1 class="font-weight-bold text-light" style="font-family: 'Raleway', sans-serif">Hải Đăng</h1>
                     </div>
-                    <div class="p-2 flex-grow-1 text-center float-right">
-                        <form class="input-group">
-                            <input class="form-control mr-2">
-                            <span class="input-group-btn">
-                                <button class="btn btn-info">Search</button>
-                            </span>
-                        </form>
-                    </div>
+                    <div class="p-2 flex-grow-1 text-center mt-3"><span style="font-size: 19px">Tận tâm, chu đáo,nhiệt
+                            tình</span></div>
                 </div>
 
             </div>
@@ -166,70 +164,73 @@
         <!--show product-->
         <div class="container-fluid mt-2" id="products">
             <div class="row">
-                <!--left column show cat by publisher-->
-                <!--show vertical when medium device UP-->
-                <div class="sd-list-l col-lg-3 p-1">
-                    <div class="container-fluid">
-                        <div style="background: rgb(244, 243, 245); text-align: center">
-                            <h2>Danh mục</h2>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <a class="btn btn-secondary rounded-0 border-dark" href="#">HKVISION</a>
-                            <a class="btn btn-secondary rounded-0 border-dark" href="#">KBVISION</a>
-                            <a class="btn btn-secondary rounded-0 border-dark" href="#">DAHUA</a>
-                            <a class="btn btn-secondary rounded-0 border-dark" href="#">HDPARAGON</a>
-                            <a class="btn btn-secondary rounded-0 border-dark" href="#">EZVIS</a>
-                            <a class="btn btn-secondary rounded-0 border-dark" href="#">AFIRI</a>
+                    <div class="container-fluid rounded" style="background: rgb(244, 243, 245)">
+                        <!--Tìm kiếm-->
+                        <div class="d-flex  flex-column flex-sm-row justify-content-end">
+                            <div class="p-2">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect01">Loại</label>
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>Tất cả</option>
+                                        <option value="1">Camera IP</option>
+                                        <option value="2">HD Analog</option>
+                                        <option value="3">Trọn bộ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="p-2">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect01">Giá</label>
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>Tất cả</option>
+                                        <option value="1">1.000.000 - 2.000.000</option>
+                                        <option value="2">2.000.000 - 3.000.000</option>
+                                        <option value="3">> 3.000.000</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="p-2 flex-grow-1 text-center float-right">
+                                <form class="input-group">
+                                    <input class="form-control mr-2">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-info">Search</button>
+                                    </span>
+                                </form>
+                            </div>
+
                         </div>
 
-                        <div class="row h-1">
+                        <div class="row bg-light h-1">
                             <pre></pre>
                         </div>
 
-                        <div class="d-flex justify-content-center" style="background: rgb(244, 243, 245)">
-                            <h1>Giá</h1>
+                        <div class="d-flex  justify-content-center flex-sm-row flex-column">
+                            <a class="p-2" href="#"><h3>HIKVISION</h3></a>
+                            <a class="p-2" href="#"><h3>HIKVISION</h3></a>
+                            <a class="p-2" href="#"><h3>HIKVISION</h3></a>
+                            <a class="p-2" href="#"><h3>HIKVISION</h3></a>.
+                            <a class="p-2" href="#"><h3>HIKVISION</h3></a>
+                            <a class="p-2" href="#"><h3>HIKVISION</h3></a>
+                          </div>
+
+                        <div class="row bg-light h-1">
+                            <pre></pre>
                         </div>
 
-                        <div class="d-flex flex-column">
-                            <div class="form-check">
-                                <label class="form-check-label text-primary">
-                                  <input type="checkbox" class="form-check-input" value="">1.000.000 ... 2.000.000 VNĐ
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <label class="form-check-label text-primary">
-                                  <input type="checkbox" class="form-check-input" value="">2.000.000 ... 3.000.000 VNĐ
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <label class="form-check-label text-primary">
-                                  <input type="checkbox" class="form-check-input" value="">3.000.000 ... 4.000.000 VNĐ
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <label class="form-check-label text-primary">
-                                  <input type="checkbox" class="form-check-input" value="">4.000.000 ... 5.000.000 VNĐ
-                                </label>
-                              </div>
+                        <div class="mt-2">
+                            <h3 class="border-bottom">Tất cả sản phẩm</h3>
                         </div>
 
-
-                    </div>
-                    <div class="container-fluid">
-                    </div>
-                </div>
-
-                <!--right column show all products' box-->
-                <div class=" col-lg-9 p-0">
-                    <div class="container-fluid rounded" style="background: rgb(244, 243, 245)">                      
-                        <div class="mt-1">
-                            <h3 class="border-bottom">Sản phẩm khuyến mãi</h3>
-                        </div>
-
-
+                      
+                        
                         <div class="row">
                             <!-- col<576,576<sm<768-->
-                            <div class="col-sm-6 col-md-3 p-2">
+                            <div class="col-12 col-sm-4 col-md-3 p-1 mt-2">
                                 <div class="card h-100">
                                     <img class="card-img-top" src="image/product/kbvision/kx-1011n.jpg"
                                         alt="Card image cap">
@@ -240,7 +241,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-3 p-2">
+                            <div class="col-12 col-sm-4 col-md-3 p-1 mt-2">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="image/product/kbvision/KX-2003N2.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body p-0" style="text-align: center">
+                                        <h2 class="card-title">KX-1011N</h2>
+                                        <h4 class="card-text text-danger font-weight-bold ">1.520.000 VNĐ</h4>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-3 p-1 mt-2">
                                 <div class="card h-100">
                                     <img class="card-img-top" src="image/product/kbvision/KX-1012N.png"
                                         alt="Card image cap">
@@ -251,72 +263,110 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-3 p-2">
+                            <div class="col-12 col-sm-4 col-md-3 p-1 mt-2">
                                 <div class="card h-100">
-                                    <img class="card-img-top " src="image/product/kbvision/KX-2003N2.jpg"
+                                    <img class="card-img-top" src="image/product/kbvision/kx-1011n.jpg"
                                         alt="Card image cap">
-
                                     <div class="card-body p-0" style="text-align: center">
-                                        <h2 class="card-title ">KX-2003N2</h2>
-                                        <h4 class="card-text text-danger font-weight-bold">2.900.000 VNĐ</h4>
+                                        <h2 class="card-title">KX-1011N</h2>
+                                        <h4 class="card-text text-danger font-weight-bold ">1.520.000 VNĐ</h4>
                                         <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-3 p-2">
-                                <div class="card">
-                                    <img class="card-img-top m-0" src="image/product/kbvision/kx-1011n.jpg"
+                            <div class="col-12 col-sm-4 col-md-3 p-1 mt-2">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="image/product/kbvision/kx-1011n.jpg"
                                         alt="Card image cap">
-
-                                    <div class="card-body p-0" style="text-align: center;">
-                                        <h2 class="card-title ">KX-1011N</h2>
-                                        <h4 class="card-text text-primary font-weight-bold">1.520.000 VNĐ</h4>
+                                    <div class="card-body p-0" style="text-align: center">
+                                        <h2 class="card-title">KX-1011N</h2>
+                                        <h4 class="card-text text-danger font-weight-bold ">1.520.000 VNĐ</h4>
                                         <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-3 p-2">
-                                <div class="card">
-                                    <img class="card-img-top " src="image/product/kbvision/KX-2003N2.jpg"
+                            <div class="col-12 col-sm-4 col-md-3 p-1 mt-2">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="image/product/kbvision/kx-1011n.jpg"
                                         alt="Card image cap">
-
                                     <div class="card-body p-0" style="text-align: center">
-                                        <h2 class="card-title ">KX-2003N2</h2>
-                                        <h4 class="card-text text-primary font-weight-bold">2.900.000 VNĐ</h4>
+                                        <h2 class="card-title">KX-1011N</h2>
+                                        <h4 class="card-text text-danger font-weight-bold ">1.520.000 VNĐ</h4>
                                         <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <hr>
-                        <!--page number-->
+
+                        <!--Page number-->
                         <div class="container-fullwidth mt-2 d-flex justify-content-end">
                             <nav aria-label="Page navigation example" class="">
                                 <ul class="pagination">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item active" aria-current="page">
-                                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
-                                    </li>
+                                  <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                  </li>
                                 </ul>
-                            </nav>
-
+                              </nav>
+    
                         </div>
+                       
+                        <hr>
+                        <h3>Trọn Bộ</h3>
+                        <hr>
+                        <!--row2-->
+                        <div class="row">
+                            <div class="col-12 col-sm-4 col-md-3 p-1 mt-2">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="image/product/kbvision/kx-1011n.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body p-0" style="text-align: center">
+                                        <h2 class="card-title">KX-1011N</h2>
+                                        <h4 class="card-text text-danger font-weight-bold ">1.520.000 VNĐ</h4>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-3 p-1 mt-2">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="image/product/kbvision/kx-1011n.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body p-0" style="text-align: center">
+                                        <h2 class="card-title">KX-1011N</h2>
+                                        <h4 class="card-text text-danger font-weight-bold ">1.520.000 VNĐ</h4>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-3 p-1 mt-2">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="image/product/kbvision/kx-1011n.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body p-0" style="text-align: center">
+                                        <h2 class="card-title">KX-1011N</h2>
+                                        <h4 class="card-text text-danger font-weight-bold ">1.520.000 VNĐ</h4>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
+
             </div>
         </div>
+        <hr>
 
-        <div class="container-fluid mt-2">
-            
-        </div>
-  
+
+
+
 
         <div class="container-fluid" style="background:dimgray" id="contact">
             <div class="row pl-5">
