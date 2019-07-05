@@ -1,8 +1,49 @@
 *{
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Raleway', 'Segoe UI';
    font-size: 100%;
 }
 
+html,body
+{
+    overflow-x: hidden; 
+}
+
+
+.dropdown-item:hover{
+   background-color: crimson !important; 
+   
+}
+
+.price-font{
+   font-size: 25px;
+}
+
+.object-cover{
+   object-fit: cover;
+}
+
+.text-heading{
+   text-transform: uppercase;
+}
+
+.mx-auto{
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.slider-selection {
+   background: #BABABA;
+   display: block;
+   position: relative;
+}
+
+.slider {
+   width: 98% !important;
+}
+
+.tooltip.in {
+   opacity: 1;
+ }
 
 .col-md-3>ul>li{
    background: #efefef;
@@ -63,10 +104,6 @@ nav .navbar-nav li a{
    color: whitesmoke !important;
 }
 
-/*.carousel-control-prev-icon{
-   background-image: url("./image/icon/icons8-back-100.png");
-}*/
-
 .carousel-control-prev-icon {
    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%333333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
   }
@@ -97,8 +134,15 @@ nav .navbar-nav li a{
        color: aliceblue;
     }
  }
+ .md-6-center{
+    display: none;
+ }
 
-
+ @media (min-width: 768px){ 
+   .md-6-center{
+      display: block;
+   }
+}
 
  @media (min-width: 991px) { 
     .sd-list-md{
@@ -110,6 +154,10 @@ nav .navbar-nav li a{
    .show-navbar{
       display: none;
    }
+   .ex2{
+      display: none;
+   }
+   .md-6-center{
+      display: none;
+   }
 }
-
-
