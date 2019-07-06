@@ -1,22 +1,127 @@
 <div class="container-fullwidth">
-                                        <div class="row text-secondary">
-                                            <div class="col-12 col-sm bg-warning m-1 rounded "
-                                                style="text-align: center;font-weight: bolder">
-                                                <span>Bảo Hành</span>
-                                                <br>
-                                                <h4>24 Tháng</h4>
-                                            </div>
-                                            <div class="col-12 col-sm bg-warning m-1 rounded"
-                                                style="text-align: center;font-weight: bolder">
-                                                <span>Lắp Đặt</span>
-                                                <br>
-                                                <h4>Miễn phí tận nơi</h4>
-                                            </div>
-                                            <div class="col-12 col-sm bg-warning m-1 rounded"
-                                                style="text-align: center;font-weight: bolder">
-                                                <span>Tư vấn</span>
-                                                <br>
-                                                <h4>Vị trí, thiết kế</h4>
-                                            </div>
-                                        </div>
-                                    </div>
+    <div class="row text-secondary">
+        <div class="col-12 col-sm bg-warning m-1 rounded " style="text-align: center;font-weight: bolder">
+            <span>Bảo Hành</span>
+            <br>
+            <h4>24 Tháng</h4>
+        </div>
+        <div class="col-12 col-sm bg-warning m-1 rounded" style="text-align: center;font-weight: bolder">
+            <span>Lắp Đặt</span>
+            <br>
+            <h4>Miễn phí tận nơi</h4>
+        </div>
+        <div class="col-12 col-sm bg-warning m-1 rounded" style="text-align: center;font-weight: bolder">
+            <span>Tư vấn</span>
+            <br>
+            <h4>Vị trí, thiết kế</h4>
+        </div>
+    </div>
+</div>
+
+
+<div class="sd-list-l col-lg-3">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center" style="background: rgb(244, 243, 245)">
+            <h1>Danh mục</h1>
+        </div>
+
+        <div class="row h-1">
+            <pre></pre>
+        </div>
+        <div class="" id="accordianId" role="tablist" aria-multiselectable="true">
+            <div class="card">
+                <div class="card-header" role="tab" id="section1HeaderId">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId"
+                            aria-expanded="true" aria-controls="section1ContentId">
+                            KBVision
+                        </a>
+                    </h5>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="section2HeaderId">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section2ContentId"
+                            aria-expanded="true" aria-controls="section2ContentId">
+                            HIKVision
+                        </a>
+                    </h5>
+                </div>
+                <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                    <ul class="list-group">
+                        <li class="list-group-item fontS-li"><a href="#" style="color: navy;">IP</a>
+                        </li>
+                        <li class="list-group-item fontS-li"><a href="#" style="color: navy;">HD
+                                Analog</a>
+                        </li>
+                        <li class="list-group-item fontS-li"><a href="#" style="color: navy;">Trọn
+                                Bộ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="section1HeaderId">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId"
+                            aria-expanded="true" aria-controls="section1ContentId">
+                            DaHue
+                        </a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="d-flex  flex-column flex-sm-row justify-content-end">
+
+    <div class="p-2 text-center">
+
+        <span>Nhà sản xuất</span>
+        <button type="button" class="btn dropdown-toggle btn-outline-secondary"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tất cả
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="">Tất cả</a> </li>
+            <li class="dropdown-item"><a href="">HIKVISION</a> </li>
+            <li class="dropdown-item"><a href="">KBVISION</a> </li>
+            <li class="dropdown-item"><a href="">DAHUA</a> </li>
+            <li class="dropdown-item"><a href="">HDPARAGON</a></li>
+            <li class="dropdown-item"><a href="">EZVIS</a></li>
+            <li class="dropdown-item"><a href="">AFIRI</a></li>
+        </ul>
+
+    </div>
+    <div class="p-2 text-center">
+        <span>Danh mục</span>
+        <button type="button" class="btn dropdown-toggle btn-outline-secondary"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tất cả
+        </button>
+        <ul class="dropdown-menu" id="list-type">
+            <li class="dropdown-item"><a href="">Tất cả</a> </li>
+            <li class="dropdown-item" id="a"><a href="">Camera IP</a> </li>
+            <li class="dropdown-item"><a href="">HD Analog</a> </li>
+            <li class="dropdown-item"><a href="">Trọn bộ</a> </li>
+        </ul>
+    </div>
+    <div class="p-2 flex-grow-1 text-center float-right">
+        <form class="input-group">
+            <input class="form-control mr-2">
+            <span class="input-group-btn">
+                <button class="btn btn-info">Tìm Kiếm</button>
+            </span>
+        </form>
+        <!--<form class="form-inline ">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>-->
+
+    </div>
+
+</div>
