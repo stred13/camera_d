@@ -8,6 +8,9 @@ html,body
     overflow-x: hidden; 
 }
 
+.fs-product{
+   font-size: 18px;
+}
 
 .dropdown-item:hover{
    background-color: crimson !important; 
@@ -67,12 +70,6 @@ td, th {
    text-align: left;
    padding: 8px;
  }
-
-
-.left-col-table{
-   background: #efefef;
-   padding-left: 20px;
-}
 
 .ul-right{
    float: right;
