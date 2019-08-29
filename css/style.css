@@ -44,10 +44,10 @@ html,body
 }
 
 .slider-track{
-   background: rgb(161, 161, 161);
+   background: #212529;
 }
 .slider-selection {
-   background: rgb(100, 99, 99);
+   background: #55585a;
    display: block;
    position: relative;
 }
@@ -65,11 +65,12 @@ html,body
 }
 
 .col-md-4>ul>li{
-   background: grey;
+   background: #6AEFBD;
 }
 
 .col-md-4>ul>li>a{
-   color: #efefef
+   color: #951042;
+   font-weight: 500;
 }
 
 .card-layout{
@@ -114,7 +115,7 @@ ul>li>a:link {
 }
 
 nav .navbar-nav li a{
-   color: #282434 !important;
+   color: #951042 !important;
 }
 
 .carousel-control-prev-icon {

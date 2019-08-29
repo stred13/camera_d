@@ -20,18 +20,17 @@ $(document).ready(function () {
         items: 2
       },
       768: {
-        items: 4
+        items: 5
       },
     }
   });
 
-  $('a').click(function(){
-    var producer = $(this).text();
-    $.get("",{type: s},function(response){
-      alert($(this).text());
+  /*$('a').click(function(){
+    var producer = $(this).val();
+    $.get("./product_info_edit.html",function(response){
+      alert('sdfsdf');
     });
-  });
+  });*/
+
 });
-
-
 
