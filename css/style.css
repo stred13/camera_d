@@ -1,5 +1,5 @@
 *{
-   font-family: 'Raleway', 'Segoe UI';
+   font-family: 'arial','serif', 'Merriweather';
    font-size: 100%;
 }
 
@@ -20,7 +20,7 @@ html,body
 }
 
 .price-font{
-   font-size: 25px;
+   font-size: 20px;
 }
 
 .object-cover{
@@ -127,6 +127,12 @@ nav .navbar-nav li a{
   }
 
 @media (max-width: 991px) { 
+   .md-img{
+      display: none;
+   }
+   .lg-img{
+      display: show;
+   }
     .sd-list-l{
        display: none;
     }
@@ -162,6 +168,13 @@ nav .navbar-nav li a{
     .sd-list-md{
        display: none;
     }
+    .md-img{
+       display: show;
+    }
+    .lg-img{
+       display: none;
+    }
+    
  }
 
  @media (min-width: 992px) { 
