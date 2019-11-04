@@ -29,6 +29,8 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="js/js-animation.js"></script>
+    <script src="js/mainjs.js"></script>
+
 
     <title>index</title>
 
@@ -37,79 +39,85 @@
 <body>
     <div class="container">
         <!--header-->
-        <section class="sticky-top">
+        <section style="background: #6AEFBD">
             <div class=" container-fluid ">
                 <div class="row">
                     <div class="col-12" style="padding: 0px;">
-                        <nav class="navbar navbar-expand-lg container-fluid navbar-dark" style="background: #6AEFBD">
-                            <a class="navbar-brand" href="#"></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarText" aria-controls="navbarText" aria-expanded="false">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse text-right" id="navbarText">
-                                <div class="text-center">
-                                    <span>Chuyên lắp đặt Camera quan sát </span>
-                                    <br>
-                                    <span style="font-family: Montserrat; font-size: 30px;color: rgb(201, 86, 10);">
-                                        <span>Hải<span style="color: rgb(201, 86, 10)"> Đăng</span></span>
-                                    </span>
-                                    <img src="image/icon/clipart1005192.png" alt=""
-                                        style="width: 28px;margin-left: 10px;margin-bottom: 10px;">
-                                    <span style="font-size: 22px;" class="text-danger">0908 022 042</span>
-                                </div>
-
-
-
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link font-weight-bold " href="#">Trang Chủ</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link font-weight-bold" href="#introduce">Giới Thiệu</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle font-weight-bold" id="dropdownaNSX" href=""
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nhà Sản
-                                            Xuất
-                                            <span class="caret"></span>
-                                        </a>
-                                        <div style="border: 3px solid black;background: rgb(41, 238, 162)"
-                                            class="dropdown-menu text-right pr-3" aria-labelledby="dropdownaNSX">
-                                            <a class="dropdown-item" href="#">HIKVISION</a>
-                                            <a class="dropdown-item" href="#">KBVISION</a>
-                                            <a class="dropdown-item" href="#">HDPARAGON</a>
-                                            <a class="dropdown-item" href="#">EZVIS</a>
-                                            <a class="dropdown-item" href="#">AFIRI</a>
-                                            <a class="dropdown-item" href="#">DAHUA</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle font-weight-bold" data-toggle="dropdown"
-                                            id="dropdownaDM" href="" aria-haspopup="true" aria-expanded="false">Danh
-                                            Mục
-                                            <span class="caret"></span>
-                                        </a>
-                                        <div style="border: 3px solid black;background: rgb(41, 238, 162)"
-                                            class="dropdown-menu text-right pr-3" aria-labelledby="dropdownaDM">
-                                            <a class="dropdown-item" href="#">Camera IP</a>
-                                            <a class="dropdown-item" href="#">HD Analog</a>
-                                            <a class="dropdown-item" href="#">Trọn Bộ</a>
-                                            <a class="dropdown-item" href="#">Đầu thu NVR</a>
-                                            <a class="dropdown-item" href="#">Khuyến mãi</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a class="nav-link font-weight-bold" href="#contact">Liên Hệ</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                        <div style="height: 4px;background: black"></div>
+                        <div class="text-center">
+                            <span>Chuyên lắp đặt Camera quan sát </span>
+                            <br>
+                            <span style="font-family: Montserrat; font-size: 30px;color: rgb(201, 86, 10);">
+                                <span>Hải<span style="color: rgb(201, 86, 10)"> Đăng</span></span>
+                            </span>
+                            <img src="image/icon/clipart1005192.png" alt=""
+                                style="width: 28px;margin-left: 10px;margin-bottom: 10px;">
+                            <span style="font-size: 22px;" class="text-danger">0908 022 042</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="bg-dark" style="height: 2px;">
+
+        </div>
+
+        <div class="container ">
+            <div class="row ">
+                <nav class="navbar navbar-expand-lg container-fluid navbar-dark" style="background: #6AEFBD">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold " href="#">Trang Chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold" href="#introduce">Giới Thiệu</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle font-weight-bold" id="dropdownaNSX" href=""
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nhà Sản
+                                    Xuất
+                                    <span class="caret"></span>
+                                </a>
+                                <div style="border: 3px solid black;background: rgb(41, 238, 162)"
+                                    class="dropdown-menu text-right pr-3" aria-labelledby="dropdownaNSX">
+                                    <a class="dropdown-item" href="#">HIKVISION</a>
+                                    <a class="dropdown-item" href="#">KBVISION</a>
+                                    <a class="dropdown-item" href="#">HDPARAGON</a>
+                                    <a class="dropdown-item" href="#">EZVIS</a>
+                                    <a class="dropdown-item" href="#">AFIRI</a>
+                                    <a class="dropdown-item" href="#">DAHUA</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle font-weight-bold" data-toggle="dropdown"
+                                    id="dropdownaDM" href="" aria-haspopup="true" aria-expanded="false">Danh
+                                    Mục
+                                    <span class="caret"></span>
+                                </a>
+                                <div style="border: 3px solid black;background: rgb(41, 238, 162)"
+                                    class="dropdown-menu text-right pr-3" aria-labelledby="dropdownaDM">
+                                    <a class="dropdown-item" href="#">Camera IP</a>
+                                    <a class="dropdown-item" href="#">HD Analog</a>
+                                    <a class="dropdown-item" href="#">Trọn Bộ</a>
+                                    <a class="dropdown-item" href="#">Đầu thu NVR</a>
+                                    <a class="dropdown-item" href="#">Khuyến mãi</a>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link font-weight-bold" href="#contact">Liên Hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
 
         <!--carouse-->
         <div class="container-fullwidth">
@@ -175,30 +183,44 @@
                         <h6 class="card-title m-0" style="color: #000000;">IPC-HDBW8231E-Z5E</h6>
                         <span class="price-font" style="color: red;">1.520.000</span>
                         <span style="color: red;font-weight: 700">₫</span>
-                        <a href="#" class="stretched-link"></a>
+                        <a class="stretched-link infoproduct" href="#" name="asd"></a>
                     </div>
                 </div>
             </div>
-
         </div>
+
         <hr>
         <!--show product-->
-        <div class="container-fluid mt-4" id="products">
+        <div class="container-fluid mt-4">
             <div class="row">
                 <!--left column show cat by publisher-->
                 <!--show vertical when medium device UP-->
                 <div class="sd-list-l col-lg-2 p-0 " style="overflow: hidden;">
                     <div class="container-fullwidth rounded mt-1">
-                        <h4
-                            style="font-weight: 700;background: rgb(114, 114, 114);color: whitesmoke;border-bottom: 3px solid black;border-right: 3px solid black;">
-                            Nhà Sản Xuất</h4>
-                        <div class="d-flex flex-column ">
-                            <a class="btn text-left " style="color:#000000;font-weight: 500" href="">HKVISION</a>
-                            <a class="btn text-left" style="color:#000000;font-weight: 500" href="#">KBVISION</a>
-                            <a class="btn text-left" style="color:#000000;font-weight: 500" href="#">DAHUA</a>
-                            <a class="btn text-left" style="color:#000000;font-weight: 500" href="#">HDPARAGON</a>
-                            <a class="btn text-left" style="color:#000000;font-weight: 500" href="#">EZVIS</a>
-                            <a class="btn text-left" style="color:#000000;font-weight: 500" href="#">AFIRI</a>
+
+                        <div class="list-group">
+                            <h5 class="list-group-item list-group-item-success font-weight-bold">
+                                Nhà Sản Xuất</h5>
+                            <a href="" class="list-group-item d-flex justify-content-between align-items-center">
+                                KBVISION
+                                <span class="badge badge-primary badge-pill text-right">14</span>
+                            </a>
+                            <a href="" class="list-group-item d-flex justify-content-between align-items-center">
+                                KBVISION
+                                <span class="badge badge-primary badge-pill text-right">14</span>
+                            </a>
+                            <a href="" class="list-group-item d-flex justify-content-between align-items-center">
+                                KBVISION
+                                <span class="badge badge-primary badge-pill text-right">14</span>
+                            </a>
+                            <a href="" class="list-group-item d-flex justify-content-between align-items-center">
+                                KBVISION
+                                <span class="badge badge-primary badge-pill text-right">14</span>
+                            </a>
+                            <a href="" class="list-group-item d-flex justify-content-between align-items-center">
+                                KBVISION
+                                <span class="badge badge-primary badge-pill text-right">14</span>
+                            </a>
                         </div>
                         <!--
                             <div class="row h-1 " style="border-top: 3px solid black">
@@ -207,15 +229,17 @@
                         -->
 
 
-                        <h4
-                            style="font-weight: 700;color: whitesmoke;background: rgb(114, 114, 114);border-bottom: 3px solid black;border-right: 3px solid black;">
+                        <h4 style="font-weight: 700;">
                             Danh mục</h4>
-                        <div class="d-flex flex-column ">
-                            <a class="btn text-left" href="#" style="color:#000000;font-weight: 500">Camera IP</a>
-                            <a class="btn text-left" href="#" style="color:#000000;font-weight: 500">HD Analog</a>
-                            <a class="btn text-left" href="#" style="color:#000000;font-weight: 500">NVR</a>
-                            <a class="btn text-left" href="#" style="color:#000000;font-weight: 500">Trọn Bộ</a>
-                            <a class="btn text-left" href="#" style="color:#000000;font-weight: 500">Khuyến Mãi</a>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Cras justo odio
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                            <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1"
+                                aria-disabled="true">Vestibulum at eros</a>
                         </div>
 
                         <!--<div class="row h-1 " style="border-top: 3px solid black">
@@ -228,24 +252,6 @@
                             <input id="ex1" class="slider" data-slider-id='ex1Slider' type="text" data-slider-min="0"
                                 data-slider-max="10000000" data-slider-step="1000000"
                                 data-slider-value="[1000000,5000000]" />
-
-                            <input id="ex2" class="slider" data-slider-id='ex1Slider' type="text" data-slider-min="0"
-                            data-slider-max="10000000" data-slider-step="1000000"
-                            data-slider-value="[1000000,5000000]"  list="tickmarks">
-
-                            <datalist id="tickmarks">
-                                <option value="0" label="0%"></option>
-                                <option value="10"></option>
-                                <option value="20"></option>
-                                <option value="30"></option>
-                                <option value="40"></option>
-                                <option value="50" label="50%"></option>
-                                <option value="60"></option>
-                                <option value="70"></option>
-                                <option value="80"></option>
-                                <option value="90"></option>
-                                <option value="100" label="100%"></option>
-                            </datalist>
                         </div>
 
                     </div>
@@ -255,199 +261,35 @@
                 <!--right column show all products' box-->
                 <div class="col-lg-10">
                     <div class="container-fluid rounded">
-                        <div class="mt-1 mx-auto"
-                            style="background: rgb(114, 114, 114);color: white;border-top: 3px solid black;">
-                            <h3 class="border-bottom text-center">Tất Cả Sản Phẩm</h3>
+                        <div class="row bg-light mx-auto my-auto text-primary p-1">
+                            <div class="col-sm-4">
+                                <ul style="list-style-type: none;">
+                                    <li><a href="">HIKVISON (20)</a></li>
+                                    <li><a href="">KBVISION (45)</a></li>
+                                    <li><a href="">DAHUA (23)</a></li>
+                                    <li><a href="">HDPARAGON (10)</a></li>
+                                    <li><a href="">AFIRI (5)</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul style="list-style-type: none;">
+                                    <li><a href="">NVR</a></li>
+                                    <li><a href="">IP</a></li>
+                                    <li><a href="">HD Analog</a></li>
+                                    <li><a href="">Khuyến Mãi</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul style="list-style-type: none;">
+                                    <li><a href="">Trong Nhà</a></li>
+                                    <li><a href="">Ngoài Trời</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="mt-4 ex2">
-                            <input id="ex2" class="slider" type="text" data-slider-min="0" data-slider-max="10000000"
-                                data-slider-step="1000000" data-slider-value="[1000000,5000000]" />
-                        </div>
-                        <div class="row">
+
+                        <div class="row" id="products">
                             <!-- col<576,576<sm<768-->
-                            <div class="col-12 col-sm-6 col-md-3 p-2">
-                                <div class="container-fullwidth" style="position: absolute;z-index: 99;">
-                                    <div class="pr-1"
-                                        style="background: red;border-left: 1px solid black;border-top: 1px solid black">
-                                        <span class="text-light" style="font-size: 20px;">
-                                            <strong>-10%</strong>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="card" style="border: 1px solid black;">
-                                    <img class="img-fluid" src="image/product/kbvision/hd/KX-Y1002C4.png"
-                                        alt="Card image cap">
-                                    <div class="card-body p-0 bg-light"
-                                        style="text-align: center;border-top: 2px solid black;">
-                                        <h6 class="card-title m-0 " style="color: black">IPC-HDBW8231E-Z5E</h6>
-                                        <span class="card-text font-weight-bold price-font"
-                                            style="color: red">1.520.000</span>
-                                        <span style="color: red">₫</span>
-                                        <a href="#" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-3 p-2">
-                                <div class="container-fullwidth" style="position: absolute;z-index: 99;">
-                                    <div class="pr-1 pl-1" style="background: #fd7e14;">
-                                        <span class="text-light" style="font-size: 20px;">
-                                            <strong>New</strong>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="card" style="border: 2px solid #FF4900;">
-                                    <img class="img-fluid" src="image/product/kbvision/ip/KX-3012N.png"
-                                        alt="Card image cap">
-                                    <div class="card-body p-0 bg-light"
-                                        style="text-align: center;border-top: 2px solid #FF4900;">
-                                        <h6 class="card-title m-0 " style="color: black">IPC-HDBW8231E-Z5E</h6>
-                                        <span class="card-text font-weight-bold price-font"
-                                            style="color: red">1.520.000</span>
-                                        <span style="color: red">₫</span>
-                                        <a href="#" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-3 p-2">
-                                <div class="container-fullwidth" style="position: absolute;z-index: 99;">
-                                    <div class="pr-1 pl-1" style="background: red;">
-                                        <span class="text-light" style="font-size: 20px;">
-                                            <strong>-10%</strong>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="card" style="border: 2px solid #FF4900;">
-                                    <img class="img-fluid" src="image/product/kbvision/hd/KX-Y1002C4.png"
-                                        alt="Card image cap">
-                                    <div class="card-body p-0 bg-light"
-                                        style="text-align: center;border-top: 2px solid #FF4900;">
-                                        <h6 class="card-title m-0 " style="color: black">IPC-HDBW8231E-Z5E</h6>
-                                        <span class="card-text font-weight-bold price-font"
-                                            style="color: red">1.520.000</span>
-                                        <span style="color: red">₫</span>
-                                        <a href="#" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-3 p-2">
-                                <div class="container-fullwidth" style="position: absolute;z-index: 99;">
-                                    <div class="pr-1 pl-1" style="background: #fd7e14;">
-                                        <span class="text-light" style="font-size: 20px;">
-                                            <strong>New</strong>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="card" style="border: 2px solid #FF4900;">
-                                    <img class="img-fluid" src="image/product/kbvision/ip/KX-3012N.png"
-                                        alt="Card image cap">
-                                    <div class="card-body p-0 bg-light"
-                                        style="text-align: center;border-top: 2px solid #FF4900;">
-                                        <h6 class="card-title m-0 " style="color: black">IPC-HDBW8231E-Z5E</h6>
-                                        <span class="card-text font-weight-bold price-font"
-                                            style="color: red">1.520.000</span>
-                                        <span style="color: red">₫</span>
-                                        <a href="#" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-3 p-2">
-                                <div class="container-fullwidth" style="position: absolute;z-index: 99;">
-                                    <div class="pr-1 pl-1" style="background: #fd7e14;">
-                                        <span class="text-light" style="font-size: 20px;">
-                                            <strong>New</strong>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="card" style="border: 2px solid #FF4900;">
-                                    <img class="img-fluid" src="image/product/kbvision/ip/KX-3012N.png"
-                                        alt="Card image cap">
-                                    <div class="card-body p-0 bg-light"
-                                        style="text-align: center;border-top: 2px solid #FF4900;">
-                                        <h6 class="card-title m-0 " style="color: black">IPC-HDBW8231E-Z5E</h6>
-                                        <span class="card-text font-weight-bold price-font"
-                                            style="color: red">1.520.000</span>
-                                        <span style="color: red">₫</span>
-                                        <a href="#" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-3 p-2">
-                                <div class="card" style="border: 2px solid #FF4900;">
-                                    <img class="img-fluid" src="image/product/kbvision/hd/KX-Y1002C4.png"
-                                        alt="Card image cap">
-                                    <div class="card-body p-0 bg-light"
-                                        style="text-align: center;border-top: 2px solid #FF4900;">
-                                        <h6 class="card-title m-0 " style="color: black">IPC-HDBW8231E-Z5E</h6>
-                                        <span class="card-text font-weight-bold price-font"
-                                            style="color: red">1.520.000</span>
-                                        <span style="color: red">₫</span>
-                                        <a href="#" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-3 p-2">
-                                <div class="container-fullwidth" style="position: absolute;z-index: 99;">
-                                    <div class="pr-1 pl-1" style="background: red;">
-                                        <span class="text-light" style="font-size: 20px;">
-                                            <strong>-10%</strong>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="card" style="border: 2px solid #FF4900;">
-                                    <img class="img-fluid" src="image/product/kbvision/hd/KX-Y1002C4.png"
-                                        alt="Card image cap">
-                                    <div class="card-body p-0 bg-light"
-                                        style="text-align: center;border-top: 2px solid #FF4900;">
-                                        <h6 class="card-title m-0 " style="color: black">IPC-HDBW8231E-Z5E</h6>
-                                        <span class="card-text font-weight-bold price-font"
-                                            style="color: red">1.520.000</span>
-                                        <span style="color: red">₫</span>
-                                        <a href="#" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-3 p-2">
-                                <div class="container-fullwidth" style="position: absolute;z-index: 99;">
-                                    <div class="pr-1 pl-1" style="background: red;">
-                                        <span class="text-light" style="font-size: 20px;">
-                                            <strong>-10%</strong>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="card" style="border: 2px solid #FF4900;">
-                                    <img class="img-fluid" src="image/product/kbvision/hd/KX-Y1002C4.png"
-                                        alt="Card image cap">
-                                    <div class="card-body p-0 bg-light"
-                                        style="text-align: center;border-top: 2px solid #FF4900;">
-                                        <h6 class="card-title m-0 " style="color: black">IPC-HDBW8231E-Z5E</h6>
-                                        <span class="card-text font-weight-bold price-font"
-                                            style="color: red">1.520.000</span>
-                                        <span style="color: red">₫</span>
-                                        <a href="#" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-3 p-2">
-                                <div class="container-fullwidth" style="position: absolute;z-index: 99;">
-                                    <div class="pr-1 pl-1" style="background: red;">
-                                        <span class="text-light" style="font-size: 20px;">
-                                            <strong>-10%</strong>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="card" style="border: 2px solid #FF4900;">
-                                    <img class="img-fluid" src="image/product/kbvision/hd/KX-Y1002C4.png"
-                                        alt="Card image cap">
-                                    <div class="card-body p-0 bg-light"
-                                        style="text-align: center;border-top: 2px solid #FF4900;">
-                                        <h6 class="card-title m-0 " style="color: black">IPC-HDBW8231E-Z5E</h6>
-                                        <span class="card-text font-weight-bold price-font"
-                                            style="color: red">1.520.000</span>
-                                        <span style="color: red">₫</span>
-                                        <a href="#" class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
 
                         </div>
 
@@ -625,7 +467,9 @@
                         <img src="image/CCTV-Cameras-Home-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">So sánh các loại Camera ngoài trời</h5>
-                            <p class="card-text">Trên thị trường hiện nay nhiều dòng Camera khác nhau với nhiều . . .
+                            <p class="card-text textell">Trên thị trường hiện nay nhiều dòng Camera khác nhau với nhiều
+                                sfopdk
+                                sd[fokpsjk spokg pfkg psdkg[dofkg [odfskg]]]
                             </p>
                         </div>
                     </div>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/js-adminroduct.js"></script>
+
+
+
+    <title>index</title>
+
+</head>
+
+<body>
+    <div class="container-fullwidth bg-light">
+        <!--header-->
+        <section>
+            <div class=" container-fluid ">
+                <div class="row">
+                    <div class="col-12 bg-dark">
+                        <h4 class="mt-2 text-light">ADMIN</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="mdProduct" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sản Phẩm</h5>
+                    <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="mt-4 col-12">
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="namep">Tên</label> <input type="text"
+                                    class="form-control" id="namep" placeholder="DX-20153" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="slNSX">Nhà Sản Xuất</label>
+                                <select	id="slNSX" class="form-control">
+                                    <option value="1">KBVSION</option>
+                                    <option value="2">HIKVISION</option>
+                                    <option value="3">DAHUA</option>
+                                    <option value="4">AFIRI</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="slType">Loại</label> <select id="slType"
+                                    class="form-control">
+                                    <option value="1">IP</option>
+                                    <option value="2">HD</option>
+                                    <option value="3">NVR</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="fImage">Chọn hình</label> <br> <input
+                                    type="file" class="form-control-file bg-white border rounded"
+                                    id="fImage">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="slpos">Vị trí</label> <select id="slpos"
+                                    class="form-control">
+                                    <option value="1">Trong nhà</option>
+                                    <option value="2">Ngoài trời</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="maint">Bảo hành</label> <input type="text"
+                                    class="form-control" id="maint" placeholder="24 tháng">
+                            </div>
+                        </div>
+    
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="fprice">Giá</label> <input type="number"
+                                    class="form-control" id="fprice" placeholder="6" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="fpromo">Khuyến mãi</label> <input type="number"
+                                    class="form-control" id="fpromo" placeholder="%">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="wv">Số lượt xem</label> <input type="number"
+                                    class="form-control" id="wv"  placeholder="0">
+                            </div>
+                        </div>
+    
+                        <div class="form-row mb-3">
+                            <label for="info">Thông tin</label>
+                            <textarea class="form-control" id="info"
+                                placeholder="Thông tin kỹ thuật" rows="5"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="reset" class="btn btn-secondary" id="rs">Reset</button>
+                            <button type="submit" class="btn btn-primary" id="addbtn">Thêm</button>
+                        </div>
+    
+                    </form>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+        <!--filter-->
+        <section class="container-fluid mt-2">
+            <div class="row">
+                <form class="col-12" action="">
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="inputState">Nhà Sản Xuất</label>
+                            <select id="inputState" class="form-control">
+                                <option value="1">Tất cả</option>
+                                <option value="2">KBVSION</option>
+                                <option value="3">HIKVISION</option>
+                                <option value="4">DAHUA</option>
+                                <option value="5">AFIRI</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputState">Loại</label>
+                            <select id="inputState" class="form-control">
+                                <option value="1">Tất cả</option>
+                                <option value="2">IP</option>
+                                <option value="3">HD Analog</option>
+                                <option value="4">NVR</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputState">Vị trí</label>
+                            <select id="inputState" class="form-control">
+                                <option value="1">Tất cả</option>
+                                <option value="2">Trong nhà</option>
+                                <option value="3">Ngoài trời</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-11">
+                            <label for="ex1">Giá</label>
+                            <input type="text" class="js-range-slider" name="my_range" />
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Lọc</button>
+                </form>
+            </div>
+        </section>
+
+        <!--tb products-->
+        <div class="container mt-2 bg-white">
+            <div class="row">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Tên</th>
+                        <th scope="col">NSX</th>
+                        <th scope="col">Loại</th>
+                        <th scope="col">Vị Trí</th>
+                        <th scope="col">Giá</th>
+                        <th scope="col">Giảm Giá</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>                    
+                      <tr>
+                        <th scope="row">1</th>
+                        <td id="tname">KX-50123</td>
+                        <td>KBVISION</td>
+                        <td>HD Analog</td>
+                        <td>Ngoài trời</td>
+                        <td>1.000.000 VNĐ</td>
+                        <td>5%</td>
+                        <td>
+                            <button class="btn btn-primary">Sửa</button>
+                            <button class="btn btn-primary">Xóa</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>KX-50123</td>
+                        <td>KBVISION</td>
+                        <td>HD Analog</td>
+                        <td>Ngoài trời</td>
+                        <td>1.000.000 VNĐ</td>
+                        <td>5%</td>
+                        <td>
+                            <button class="btn btn-primary">Sửa</button>
+                            <button class="btn btn-primary">Xóa</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>KX-50123</td>
+                        <td>KBVISION</td>
+                        <td>HD Analog</td>
+                        <td>Ngoài trời</td>
+                        <td>1.000.000 VNĐ</td>
+                        <td>5%</td>
+                        <td>
+                            <button class="btn btn-primary">Sửa</button>
+                            <button class="btn btn-primary">Xóa</button>
+                        </td>
+                      </tr>
+                   
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+        <!--plus button-->
+        <div class="container-fluid fixed-bottom mb-5">
+            <button class="btn float-right" data-toggle="modal" data-target="#mdProduct"><img
+                    src="image/icon/plus.png" /></button>
+        </div>
+        <!-- Footer -->
+        <footer class="page-footer mt-2 bg-dark text-light">
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="#" class="text-danger"> Hải Đăng</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

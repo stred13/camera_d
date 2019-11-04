@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.1/bootstrap-slider.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.1/css/bootstrap-slider.min.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/js-posting.js"></script>
+
+    <title>index</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <!--header-->
+        <section>
+            <div class=" container-fluid ">
+                <div class="row">
+                    <div class="col-12 bg-dark">
+                        <h4 class="mt-2 text-light">ADMIN</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            <label class="font-weight-bold mb-0 mt-2" style="font-size: 2em;" for="titlenew">Tiêu
+                                đề</label>
+                            <textarea class="form-control" id="titlenew" rows="2"></textarea>
+                            <label class="font-weight-bold mb-0 mt-2" style="font-size: 2em;" for="intro">Intro</label>
+                            <textarea class="form-control" id="intro" rows="3"></textarea>
+                            <label class="font-weight-bold mb-0 mt-2" style="font-size: 2em;" for="">Bài viết</label>
+                            <textarea class="form-control" id="body" rows="10"></textarea>
+                            <label class="font-weight-bold mb-0 mt-2" style="font-size: 2em;" for="media">Media</label>
+
+
+                            <!--Media choosen-->
+                            <div class="container-fullwidth" id="mainm">
+                                <div class="row" id="me">
+                                    <div class="col-sm-4">
+                                        <label class="font-weight-bold mb-0 mt-2" style="font-size: 1.1em;"
+                                            for="paragraphh">Đoạn</label>
+                                        <input type="number" class="form-control paragraph" placeholder="Đoạn">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <label class="font-weight-bold mt-2" style="font-size: 1.1em;"
+                                            for="filechosen">Chọn hình</label>
+                                        <input type="file" class="form-control-file filechosen">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <button id="btnMedia" type="button" class="btn btn-primary mt-2">Thêm Dòng</button>
+
+                            <button id="btnsub" type="submit" class="btn btn-primary mt-2" style="float: right;">Đăng
+                                bài</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="page-footer mt-2 bg-dark text-light">
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="#" class="text-danger"> Hải Đăng</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+    </div>
+</body>
+
+</html>
